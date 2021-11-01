@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  font-family: 'Red Hat Display', sans-serif;
+  height: 100vh;
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: hsl(225, 100%, 98%);
+  border-radius: 25px;
+  width: 360px;
+  height: 600px;
+}
+
+.hero-img {
+  width: 100%;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-title {
+  font-size: 22px;
+  margin-top: 30px;
+}
+
+.order-para {
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  padding: 0 40px;
+  color: hsl(224, 23%, 55%);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.subscribe-container {
+  cursor: pointer;
+  background: rgb(235, 238, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width: 300px;
+  height: 70px;
+  margin-top: 10px;
+  padding: 40px 0;
+}
+
+.music-icon {
+  padding: 0 20px;
+}
+
+.plan-wrapper {
+  padding-left: 10px;
+}
+
+.plan-type {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.plan-price {
+  color: hsl(224, 23%, 55%);
+}
+
+.change-plan {
+  cursor: pointer;
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.change-plan:hover {
+  color: hsl(245, 68%, 65%);
+  text-decoration: none;
+}
+
+.btn {
+  cursor: pointer;
+  width: 300px;
+  height: 50px;
+  margin: 10px 0;
+}
+
+.btn-proceed {
+  color: #eee;
+  background: hsl(245, 75%, 52%);
+  box-shadow: 3px 3px 40px hsla(248, 74%, 71%, 0.863);
+  border: 0;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 900;
+  margin-top: 30px;
+}
+
+.btn-proceed:hover {
+  color: #fff;
+  box-shadow: 3px 3px 40px hsla(248, 74%, 71%, 0.788);
+  background: hsl(245, 89%, 64%);
+  border: 0;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 900;
+  margin-top: 30px;
+}
+
+.btn-cancel {
+  color: #757880;
+  font-size: 16px;
+  font-weight: 700;
+  border: 0;
+  background: 0;
+}
+
+.btn-cancel:hover {
+  color: #000;
+  font-size: 16px;
+  font-weight: 700;
+  border: 0;
+  background: 0;
+}
