@@ -106,7 +106,7 @@ body {
 .btn-proceed {
   color: #eee;
   background: hsl(245, 75%, 52%);
-  box-shadow: 3px 3px 40px hsla(248, 74%, 71%, 0.863);
+  box-shadow: 3px 3px 40px hsla(246, 71%, 81%, 0.932);
   border: 0;
   border-radius: 10px;
   font-size: 16px;
@@ -116,8 +116,8 @@ body {
 
 .btn-proceed:hover {
   color: #fff;
-  box-shadow: 3px 3px 40px hsla(248, 74%, 71%, 0.788);
-  background: hsl(245, 89%, 64%);
+  box-shadow: 3px 3px 40px hsla(246, 71%, 81%, 0.932);
+  background: hsl(245, 86%, 61%);
   border: 0;
   border-radius: 10px;
   font-size: 16px;
@@ -139,4 +139,13 @@ body {
   font-weight: 700;
   border: 0;
   background: 0;
+}
+
+@media screen and (max-width: 698px) {
+  body {
+    background-image: url(/images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -600px;
+  }
 }
