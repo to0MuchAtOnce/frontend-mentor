@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: url(/images/pattern-background-desktop.svg);
+  background-image: url(/order-summary-card/images/pattern-background-desktop.svg);
   background-repeat: no-repeat;
   background-color: hsl(225, 100%, 94%);
   font-family: 'Red Hat Display', sans-serif;
@@ -143,7 +143,7 @@ body {
 
 @media screen and (max-width: 698px) {
   body {
-    background-image: url(/images/pattern-background-mobile.svg);
+    background-image: url(/order-summary-card/images/pattern-background-mobile.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -600px;

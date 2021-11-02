@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  max-width: 1440px;
+  background-color: hsl(233, 47%, 7%);
+  font-family: 'Lexend Deca', sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+
+.card {
+  border-radius: 10px;
+  display: flex;
+  width: 870px;
+  height: 369px;
+  background: hsl(244, 38%, 16%);
+}
+
+.card-content {
+  margin: 20px;
+}
+
+.hero {
+  font-size: 26px;
+  letter-spacing: 1px;
+  padding: 35px 40px 0;
+}
+
+.hero-para {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Inter', sans-serif;
+  line-height: 1.9;
+  font-weight: 400;
+  font-size: 11.2px;
+  padding: 25px 60px 0 40px;
+}
+
+.stats {
+  display: flex;
+  padding: 50px 40px;
+}
+
+.stat-num {
+  color: hsl(0, 0%, 100%);
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.stat {
+  color: hsla(0, 0%, 100%, 0.6);
+  display: flex;
+  flex-direction: column;
+  font-size: 11px;
+  margin-right: 40px;
+}
+
+.hero-text-purple {
+  color: hsl(277, 64%, 61%);
+}
+
+.card-img {
+  background-image: url('../stats-preview-card/images/image-header-desktop.jpg');
+  filter: saturate(280%);
+  box-shadow: inset 0 0 0 1000px hsla(277, 68%, 27%, 0.411);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 0.8;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 1200px;
+}
