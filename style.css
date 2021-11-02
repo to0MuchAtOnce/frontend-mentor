@@ -12,9 +12,9 @@ body {
   font-family: 'Red Hat Display', sans-serif;
   display: flex;
   flex-direction: column;
-
   align-items: center;
   height: 100vh;
+  max-height: 100%;
 }
 
 .page-title {
@@ -55,4 +55,10 @@ ul li a:hover img {
   max-width: 100%;
   height: 200px;
   transform: scale(1.03);
+}
+
+@media screen and (max-width: 698px) {
+  body {
+    height: 100%;
+  }
 }

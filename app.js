@@ -1,4 +1,8 @@
-const projects = ['order-summary-card', 'stats-preview-card'];
+const projects = [
+  'order-summary-card',
+  'stats-preview-card',
+  'single-price-grid',
+];
 
 const list = document.getElementById('list');
 
