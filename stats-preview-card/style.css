@@ -79,3 +79,95 @@ body {
   border-top-right-radius: 10px;
   width: 1200px;
 }
+
+@media screen and (max-width: 900px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    max-width: 1440px;
+    background-color: hsl(233, 47%, 7%);
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsl(0, 0%, 100%);
+  }
+
+  .card {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    max-width: 375px;
+    height: 740px;
+    background: hsl(244, 38%, 16%);
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .hero {
+    font-size: 24px;
+    letter-spacing: 1px;
+    padding: 35px 20px 0;
+  }
+
+  .hero-para {
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.9;
+    font-weight: 400;
+    font-size: 13px;
+    padding: 20px 55px;
+  }
+
+  .stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .stat-num {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+    font-size: 21px;
+    margin-bottom: 8px;
+  }
+
+  .stat {
+    color: hsla(0, 0%, 100%, 0.6);
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .hero-text-purple {
+    color: hsl(277, 64%, 61%);
+  }
+
+  .card-img-mobile {
+    background-image: url('../stats-preview-card/images/image-header-desktop.jpg');
+    filter: saturate(280%);
+    box-shadow: inset 0 0 0 1000px hsla(277, 68%, 27%, 0.411);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    opacity: 0.8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 375px;
+    height: 285px;
+  }
+}
