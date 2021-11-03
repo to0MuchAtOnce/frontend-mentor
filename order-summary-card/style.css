@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  background: hsl(225, 100%, 98%);
+  background: #fff;
   border-radius: 25px;
   width: 360px;
   height: 600px;
@@ -106,7 +106,7 @@ body {
 .btn-proceed {
   color: #eee;
   background: hsl(245, 75%, 52%);
-  box-shadow: 3px 3px 40px hsla(246, 71%, 81%, 0.932);
+  box-shadow: 3px 3px 40px hsla(246, 59%, 61%, 0.5);
   border: 0;
   border-radius: 10px;
   font-size: 16px;
