@@ -107,7 +107,7 @@ body {
   border-radius: 5px;
   box-shadow: 4px 4px 12px rgba(70, 67, 67, 0.3);
   cursor: pointer;
-  color: var(--neutral-light-grey);
+  color: #fff;
   background: var(--primary-bright-yellow);
   padding: 15px 20px;
   letter-spacing: 1px;
