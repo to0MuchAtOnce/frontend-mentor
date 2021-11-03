@@ -2,6 +2,7 @@ const projects = [
   'order-summary-card',
   'stats-preview-card',
   'single-price-grid',
+  'profile-card',
 ];
 
 const list = document.getElementById('list');
