@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lexend Deca', sans-serif;
+  margin: 20px 50px;
+}
+
+.boxes {
+  margin: 0 40px;
+}
+
+.box {
+  padding: 40px 40px;
+  max-height: 530px;
+  width: 280px;
+}
+
+.box:nth-child(1) {
+  background: hsl(31, 77%, 52%);
+  border-radius: 8px 8px 0 0;
+}
+
+.box:nth-child(2) {
+  background: hsl(184, 100%, 22%);
+}
+
+.box:nth-child(3) {
+  background: hsl(179, 100%, 13%);
+  border-radius: 0 0 8px 8px;
+}
+
+.box-img {
+  width: 50px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.box-title {
+  color: #fff;
+  font-size: 34px;
+  font-family: 'Big Shoulders Display';
+}
+
+.box-para {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 12px;
+  padding: 20px 10px 0 0;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.box-btn {
+  border: 2px solid transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  padding: 10px 25px;
+  font-weight: 700;
+}
+
+.box-btn1 {
+  color: hsl(31, 77%, 52%);
+}
+
+.box-btn2 {
+  color: hsl(184, 100%, 22%);
+}
+
+.box-btn3 {
+  color: hsl(179, 100%, 13%);
+}
+
+.box-btn:hover {
+  color: #fff;
+  background: 0;
+  border: 2px solid #fff;
+}
+
+@media screen and (min-width: 820px) {
+  body {
+    overflow: hidden;
+    margin: 0 50px;
+  }
+
+  .boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .box {
+    padding: 40px 40px;
+    max-height: 830px;
+    width: 260px;
+  }
+
+  .box:nth-child(1) {
+    background: hsl(31, 77%, 52%);
+    border-radius: 8px 0 0 8px;
+  }
+
+  .box:nth-child(2) {
+    background: hsl(184, 100%, 22%);
+  }
+
+  .box:nth-child(3) {
+    background: hsl(179, 100%, 13%);
+    border-radius: 0 8px 8px 0;
+  }
+
+  .box-para {
+    padding: 20px 12px 0 0;
+    margin-bottom: 50px;
+  }
+}
