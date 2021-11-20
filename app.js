@@ -3,6 +3,7 @@ const projects = [
   'stats-preview-card',
   'single-price-grid',
   'profile-card',
+  '3-column-preview-card',
 ];
 
 const list = document.getElementById('list');
