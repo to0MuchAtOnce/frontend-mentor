@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header-wrapper">
+        <h1 class="calc">Calc</h1>
+        <header class="header">
+          <ul class="nums">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li></li>
+          </ul>
+          <div class="theme-container">
+            <h2>THEME</h2>
+            <input type="checkbox" class="checkbox" />
+          </div>
+        </header>
+      </div>
+      <div class="screen"></div>
+      <div class="buttons">
+        <div>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button class="del-btn">DEL</button>
+        </div>
+
+        <div>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button>+</button>
+        </div>
+
+        <div>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>-</button>
+        </div>
+
+        <div>
+          <button class="deci-btn">.</button>
+          <button>0</button>
+          <button>/</button>
+          <button>x</button>
+        </div>
+
+        <div>
+          <button class="reset-btn">RESET</button>
+          <button class="equal-btn">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

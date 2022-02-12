@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+  <title>Intro sign up form</title>
+</head>
+
+<body>
+  <main>
+
+    <div class="content-left">
+      <h1 class="title">Learn to code by watching others</h1>
+
+      <p class="para">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </div>
+
+    <div class="content-right">
+      <div class="card"><span class="card-text-bold">Try it free 7 days</span> <span class="card-text-grey"> then <br>
+          $20/mo. thereafter</span></div>
+
+      <form id="form" class="form" action="GET">
+        <div class="form-control">
+          <label for="text"></label>
+          <input class="input input-info" id="firstname" class="text" type="text" placeholder="First Name">
+          <small class="form-warning"> First Name cannot be empty</small>
+        </div>
+
+        <div class="form-control">
+          <label for="text"></label>
+          <input class="input input-info" id="lastname" class="warning-img" type="text" placeholder="Last Name">
+          <small class="form-warning"> Last Name cannot be empty</small>
+
+        </div>
+        <div class="form-control">
+          <label for="text"></label>
+          <input class="input input-info" id="email" type="email" placeholder="Email Address">
+          <small class="form-warning">Looks like this is not an email</small>
+
+        </div>
+        <div class="form-control">
+          <label for="text"></label>
+          <input class="input input-info" id="password" type="password" placeholder="Password">
+          <small class="form-warning">Password cannot be empty</small>
+        </div>
+
+        <div class="form-control">
+          <label for="submit"></label>
+          <input id="form-btn" class="form-btn input" type="submit" value="CLAIM YOUR FREE TRIAL" required>
+        </div>
+
+        <small class="terms">
+          By clicking the button, you are agreeing to our <a href="#" class="terms-color-red">Terms and Services</a>
+        </small>
+
+      </form>
+    </div>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+
+    <title>Calculator app | Frontend Mentor</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header-wrapper">
+        <h1 class="calc">Calc</h1>
+        <header class="header">
+          <ul class="nums">
+            <li class="theme">1</li>
+            <li class="theme">2</li>
+            <li class="theme">3</li>
+          </ul>
+          <div class="header-container">
+            <h2>THEME</h2>
+            <input type="checkbox" class="checkbox" />
+          </div>
+        </header>
+      </div>
+      <div class="screen">
+        <div class="previous-operand"></div>
+        <div class="current-operand"></div>
+      </div>
+
+      <div class="buttons">
+        <div>
+          <button data-number>7</button>
+          <button data-number>8</button>
+          <button data-number>9</button>
+          <button class="del-btn">DEL</button>
+        </div>
+
+        <div>
+          <button data-number>4</button>
+          <button data-number>5</button>
+          <button data-number>6</button>
+          <button data-operation>+</button>
+        </div>
+
+        <div>
+          <button data-number>1</button>
+          <button data-number>2</button>
+          <button data-number>3</button>
+          <button data-operation>-</button>
+        </div>
+
+        <div>
+          <button data-number>.</button>
+          <button data-number>0</button>
+          <button data-operation>/</button>
+          <button data-operation>x</button>
+        </div>
+
+        <div>
+          <button class="reset-btn">RESET</button>
+          <button class="equal-btn">=</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html

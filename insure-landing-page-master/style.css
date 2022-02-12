@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'DM Serif Display', sans-serif;
+  margin: 20px 0;
+  max-width: 100%;
+  width: 1440px;
+}
+
+.navigation {
+  height: 2vh;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+}
+
+.navigation ul {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navigation ul li {
+  font-size: 14px;
+  padding: 0 10px;
+  list-style-type: none;
+}
+
+.container-top {
+  color: #fff;
+  background-color: hsl(256, 26%, 20%);
+  display: flex;
+}
+
+.container-top p {
+  font-size: 10px;
+}
+
+.intro-img {
+  display: flex;
+  flex-direction: row;
+}

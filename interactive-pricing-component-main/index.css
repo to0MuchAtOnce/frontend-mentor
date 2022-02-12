@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#container {
+  margin: 0.5rem;
+}
+
+#heading-1 {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#heading-2 {
+  font-weight: 600;
+  line-height: 0.8;
+  text-align: center;
+  font-size: 16px;
+  color: #d9d9d9;
+}
+
+#card {
+  background: #11aabb;
+  border-radius: 8px;
+  text-align: center;
+  padding: 1.5rem 0;
+}
+
+#views {
+  font-size: 13px;
+  letter-spacing: 2px;
+  padding-bottom: 1rem;
+}
+
+#timescale {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+}
+
+#price {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-size: 34px;
+}
+
+#billing {
+  display: flex;
+  justify-content: center;
+}
+
+#monthly-billing,
+#yearly-billing {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 15px;
+}
+
+#discount {
+  padding-left: 10px;
+}
+
+#list {
+  padding: 0;
+}
+
+.list-item {
+  font-size: 12px;
+  line-height: 2.2;
+  font-weight: 600;
+  list-style-type: none;
+}
+
+#btn {
+  border-radius: 50px;
+  border: 0;
+  background: blue;
+  align-items: center;
+  font-size: 13px;
+  padding: 14px 40px;
+}

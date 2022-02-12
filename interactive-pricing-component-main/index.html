@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Interactive pricing component</title>
+  </head>
+  <body>
+    <div id="container">
+      <h1 id="heading-1">Simple, traffic-based pricing</h1>
+      <h2 id="heading-2">Sign-up for our 30-day trial.</h2>
+      <h2 id="heading-2">No credit card required.</h2>
+      <div id="card">
+        <div id="card-head">
+          <p id="views">10K PAGEVIEWS</p>
+        </div>
+
+        <div id="range-wrapper">
+          <label for="range" id="slider"></label>
+          <input type="range" min="0" max="100" step="20" />
+        </div>
+        <div id="price-wrapper">
+          <p id="price">£8.00<span id="timescale">&nbsp; / month</span></p>
+        </div>
+
+        <div id="billing">
+          <h4 id="monthly-billing">Monthly Billing</h4>
+          <input type="checkbox" />
+          <h4 id="yearly-billing">
+            Yearly Billing<span id="discount">-25%</span>
+          </h4>
+        </div>
+
+        <hr />
+        <ul id="list">
+          <li class="list-item">Unlimited websites</li>
+          <li class="list-item">100% data ownership</li>
+          <li class="list-item">Email reports</li>
+        </ul>
+
+        <button id="btn">Start my trial</button>
+      </div>
+    </div>
+  </body>
+</html>
