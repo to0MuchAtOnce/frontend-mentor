@@ -12,7 +12,6 @@ projects.forEach((project, i) => {
   const listItem = document.createElement('li');
   const link = document.createElement('a');
   link.href = `/${project}/index.html`;
-  link.innerText = `${i + 1}. ${formatProjectName(project)}`;
 
   const img = document.createElement('img');
   img.src = `/${project}/design/desktop-design.jpg`;

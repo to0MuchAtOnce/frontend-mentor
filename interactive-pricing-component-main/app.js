@@ -1,6 +1,12 @@
 const slider = document.getElementById('slider');
-const selector = document.getElementById('selector');
+const numViews = document.getElementById('numViews');
+const frequencyToggle = document.getElementById('billing-frequency');
+const form = document.getElementById('card');
+
+numViews.innerText = slider.value;
 
 slider.oninput = function () {
-  selector.style.left = this.value + '%';
+  numViews.innerText = this.value;
 };
+
+form.addEventListener('submit', (e) => e.preventDefault());

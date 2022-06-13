@@ -10,47 +10,47 @@
   <body>
     <div id="container">
       <h1 id="heading-1">Simple, traffic-based pricing</h1>
-      <h2 id="heading-2">Sign-up for our 30-day trial.</h2>
-      <h2 id="heading-2">No credit card required.</h2>
-      <div id="card">
-        <div id="card-head">
-          <p id="views">10K PAGEVIEWS</p>
-
+      <div id="sub-headings">
+        <h2 class="heading-2">Sign-up for our 30-day trial.</h2>
+        <h2 class="heading-2">No credit card required.</h2>
+      </div>
+      <form id="card">
+        <div id="views-flex-wrapper">
+          <div id="views">
+            <span id="numViews"></span>
+            <p id="view-text">K PAGEVIEWS</p>
+          </div>
           <div id="slider-wrapper">
-            <label for="range" id="slider"></label>
-            <input id="slider" type="range" min="0" max="100" value="50" />
-            <div id="selector">
-              <div id="selectBtn">
-                <img
-                  id="icon-slider"
-                  src="./images/icon-slider.svg"
-                  alt="icon-slider"
-                />
-              </div>
-            </div>
+            <label for="range"></label>
+            <input id="slider" type="range" min="1" max="5" step="1" value="3" />
           </div>
           <div id="price-wrapper">
-            <p id="price">£8.00<span id="timescale">&nbsp; / month</span></p>
+            <p id="price">£16.00<span id="timescale">&nbsp; / month</span></p>
           </div>
+        </div>
 
           <div id="billing">
             <h4 id="monthly-billing">Monthly Billing</h4>
-            <input type="checkbox" />
+            <label id="toggle" for="toggle-input">
+              <input type="checkbox" name="billing-frequency" id="toggle-input"/>
+              <div id="toggle-fill"></div>
+            </label>
             <h4 id="yearly-billing">
-              Yearly Billing<span id="discount">-25%</span>
+              Yearly Billing<span id="discount"><span id="discount-minus">-</span>
+                25% <span id="discount-word">discount</span> </span>
             </h4>
           </div>
-
-          <hr />
+          
+          <div id="list-flex-cont">
           <ul id="list">
-            <li class="list-item">Unlimited websites</li>
-            <li class="list-item">100% data ownership</li>
-            <li class="list-item">Email reports</li>
+            <li class="list-item"><img class="check-icon" src="./images/icon-check.svg" alt="check icon">Unlimited websites</li>
+            <li class="list-item"><img class="check-icon" src="./images/icon-check.svg" alt="check icon">100% data ownership</li>
+            <li class="list-item"><img class="check-icon" src="./images/icon-check.svg" alt="check icon">Email reports</li>
           </ul>
 
           <button id="btn">Start my trial</button>
         </div>
-      </div>
+      </form>
     </div>
   </body>
 </html>
