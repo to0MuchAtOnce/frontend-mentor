@@ -4,6 +4,7 @@ const projects = [
   'single-price-grid',
   'profile-card',
   '3-column-preview-card',
+  'interactive-rating-component',
 ];
 
 const list = document.getElementById('list');
