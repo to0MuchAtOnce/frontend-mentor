@@ -5,6 +5,7 @@ const projects = [
   'profile-card',
   '3-column-preview-card',
   'interactive-rating-component',
+  'qr-code-component',
 ];
 
 const list = document.getElementById('list');
