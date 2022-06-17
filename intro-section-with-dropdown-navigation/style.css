@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar {
+  display: flex;
+  background: #fff;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+  overflow: hidden;
+}
+
+/* hamburger */
+.navbar .hamburger {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+  outline: none;
+}
+
+.navbar .nav-links {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+.nav-links .nav-link {
+  padding: 0.3rem;
+  text-decoration: none;
+  list-style-type: none;
+  letter-spacing: 0.1rem;
+}
+
+.sub-menu-parent {
+}
+
+.sub-menu {
+}
+.hamburger .line {
+  display: block;
+  width: 35px;
+  height: 2.5px;
+  background-color: #222;
+  margin-bottom: 0.4rem;
+  /*from hamburger to cross*/
+  transition: 0.4s;
+}
+
+/* cross */
+.cross .line:nth-child(1) {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.cross .line:nth-child(2) {
+  opacity: 0;
+}
+
+.cross .line:nth-child(3) {
+  transform: rotate(45deg) translate(-6px, -5px);
+}
+
+.hero-mobile {
+  display: none;
+  max-width: 500px;
+}
+
+/*hide toggler button on big screens*/
+@media screen and (min-width: 900px) {
+  .navbar .hamburger {
+    display: none;
+  }
+}
+
+/*navigation for tablet and desktops*/
+@media (min-width: 768px) {
+  .navbar {
+    justify-content: space-around;
+    padding: 0.4rem 0;
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 767px) {
+  /*hide nav by transform*/
+  .nav-links-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: inherit;
+    z-index: 2;
+    transform: translateX(100%);
+    /*nav sidebar speed*/
+    transition: all 0.5s linear;
+    opacity: 0.5;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 12%;
+    left: 5%;
+  }
+
+  .nav-btn-wrapper {
+    position: fixed;
+    top: 50%;
+    left: 20%;
+  }
+
+  .nav-btn {
+    background: none;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 15px;
+    margin: 5px 0;
+    outline: 0;
+  }
+
+  .nav-login-btn {
+    border: 1px soild hsl(0, 0%, 41%);
+  }
+}
+
+.nav-register-btn {
+  border: 1px soild hsl(0, 0%, 41%);
+}
+
+/* make nav visible by transform */
+.nav-active {
+  transform: translateX(35%);
+  opacity: 1;
+}
+
+.hero-desktop {
+  display: none;
+}
+
+.hero-mobile {
+  display: block;
+}
