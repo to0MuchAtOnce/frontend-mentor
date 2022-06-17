@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Epilogue', sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,6 +32,10 @@ body {
   outline: none;
 }
 
+.nav-link-wrapper {
+  padding: 0.5rem 1.5rem;
+}
+
 .navbar .nav-links {
   list-style-type: none;
   overflow: hidden;
@@ -42,6 +46,14 @@ body {
   text-decoration: none;
   list-style-type: none;
   letter-spacing: 0.1rem;
+}
+
+.nav-link-pt {
+  padding-top: 25px;
+}
+
+.nav-link-pb {
+  padding-bottom: 25px;
 }
 
 .hamburger .line {
@@ -100,7 +112,7 @@ body {
     z-index: 2;
     transform: translateX(100%);
     /*nav sidebar speed*/
-    transition: all 0.5s linear;
+    transition: all 0.2s linear;
     opacity: 0.5;
   }
 
@@ -111,23 +123,45 @@ body {
   }
 
   .nav-btn-wrapper {
-    position: fixed;
-    top: 50%;
-    left: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .nav-btn {
     background: none;
-    border-radius: 10px;
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 15px;
     cursor: pointer;
-    padding: 12px;
     font-size: 15px;
     margin: 5px 0;
+    padding: 0.8rem;
     outline: 0;
+    width: 180px;
   }
 
+  .nav-btn:active {
+    transform: scale(0.98);
+  }
   .nav-login-btn {
-    border: 1px soild hsl(0, 0%, 41%);
+    border: 1px solid #fff;
+    transition: 0.3s ease;
+  }
+
+  .nav-login-btn:hover {
+    border: 1px solid hsl(0, 0%, 41%);
+    transition: 0.3s ease;
+  }
+
+  .nav-register-btn {
+    transition: 0.3s ease;
+  }
+
+  .nav-register-btn:hover {
+    color: #fff;
+    background: hsl(0, 0%, 8%);
+    transition: 0.3s ease;
   }
 
   input[type='checkbox'] {
@@ -135,11 +169,27 @@ body {
     position: absolute;
   }
 
-  #collapse:checked ~ li {
+  .label {
+    cursor: pointer;
+  }
+
+  #collapseFeatures:checked ~ li {
     display: none;
     margin-top: 0;
   }
-  #collapse:checked + label:before {
+
+  #collapseFeatures:checked + label:before {
+    position: relative;
+    right: calc(-160px);
+    opacity: 1;
+  }
+
+  #collapseCompany:checked ~ li {
+    display: none;
+    margin-top: 0;
+  }
+
+  #collapseCompany:checked + label:before {
     position: relative;
     right: calc(-160px);
     opacity: 1;
