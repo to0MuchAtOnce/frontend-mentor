@@ -44,11 +44,6 @@ body {
   letter-spacing: 0.1rem;
 }
 
-.sub-menu-parent {
-}
-
-.sub-menu {
-}
 .hamburger .line {
   display: block;
   width: 35px;
@@ -133,6 +128,21 @@ body {
 
   .nav-login-btn {
     border: 1px soild hsl(0, 0%, 41%);
+  }
+
+  input[type='checkbox'] {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  #collapse:checked ~ li {
+    display: none;
+    margin-top: 0;
+  }
+  #collapse:checked + label:before {
+    position: relative;
+    right: calc(-160px);
+    opacity: 1;
   }
 }
 
