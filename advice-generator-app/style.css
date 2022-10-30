@@ -44,15 +44,8 @@ body {
   font-size: 28px;
 }
 
-.divider-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-
-.line {
-  width: 30%;
+.divider-img {
+  width: 390px;
 }
 
 .btn {
