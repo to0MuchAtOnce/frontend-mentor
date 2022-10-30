@@ -6,6 +6,7 @@ const projects = [
   '3-column-preview-card',
   'interactive-rating-component',
   'qr-code-component',
+  'adivce-generator-app',
 ];
 
 const list = document.getElementById('list');
