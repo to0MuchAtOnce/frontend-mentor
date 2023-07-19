@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+  --bg: hsl(226, 43%, 10%);
+  --primary-blue: hsl(246, 80%, 60%);
+  --dark-blue: hsl(235, 46%, 20%);
+  --work-top-bg: hsl(15, 100%, 70%);
+  --play-top-bg: hsl(195, 74%, 62%);
+  --study-top-bg: hsl(348, 100%, 68%);
+  --exercise-card-bg: hsl(145, 58%, 55%);
+  --social-card-bg: hsl(264, 64%, 52%);
+  --care-card-bg: hsl(43, 84%, 65%);
+  --pale-blue: hsl(236, 100%, 87%);
+  --light-text: #fff;
+}
+
+* {
+  box-shadow: 0;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'rubik', sans-serif;
+  background: var(--bg);
+  color: #fff;
+  margin: 1rem;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: clamp(1rem, 3vw, 2rem);
+}
+
+.card {
+  border-radius: 12px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.card-top {
+  height: 34px;
+}
+
+.profile-card {
+  background: var(--dark-blue);
+  border-radius: 12px;
+}
+
+.profile-card-top {
+  border-radius: 12px;
+}
+
+.profile-card-bottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card-btn {
+  color: var(--pale-blue);
+  background: 0;
+  border: 0;
+  height: 64px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.active {
+  color: var(--light-text);
+}
+
+.profile-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--light-text);
+}
+
+.work-card {
+  background: var(--work-top-bg);
+}
+
+.play-card {
+  background: var(--play-top-bg);
+}
+
+.study-card {
+  background: var(--study-top-bg);
+}
+
+.exercise-card {
+  background: var(--exercise-card-bg);
+}
+
+.social-card {
+  background: var(--social-card-bg);
+}
+
+.care-card {
+  background: var(--care-card-bg);
+}
+
+.profile-card-top {
+  display: flex;
+  background-color: var(--primary-blue);
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.card-bottom {
+  background: var(--dark-blue);
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.card-btm-head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+}
+
+.ph-dots-three {
+  color: var(--pale-blue);
+  font-size: 40px;
+}
+
+.card-btm-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+small {
+  color: var(--pale-blue);
+  font-size: 14px;
+}
+
+.main-hrs {
+  font-size: 30px;
+  font-weight: 300;
+}

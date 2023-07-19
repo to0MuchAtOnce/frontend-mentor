@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="app.js" defer></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+</head>
+
+<body>
+  <div class="container" aria-labelledby="tab-daily">
+    <div class="profile-card">
+      <div class="profile-card-top">
+        <img class="profile-image" src="./images/image-jeremy.png" alt="profile-image">
+        <h1><span>Report for</span> <br>
+          Jeremy Robson
+        </h1>
+      </div>
+      <div class="profile-card-bottom">
+        <button id="tab-daily" class="card-btn active">Daily</button>
+        <button id="tab-daily" class="card-btn">Weekly</button>
+        <button id="tab-daily" class="card-btn">Monthly</button>
+      </div>
+    </div>
+
+    <div class="card-container">
+      <div class="card work-card">
+        <div class="card-top work-card-top"></div>
+        <div class="card-bottom">
+          <div class="card-btm-head">
+            <h2 class="card-title">Work</h2>
+            <i class="ph-bold ph-dots-three"></i>
+          </div>
+          <div class="card-btm-main">
+            <p class="main-hrs">...hrs</p> <!-- daily -->
+            <small>Yesterday - <span class="">7hrs</span></small> <!-- daily -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card play-card">
+        <div class="card-top play-card-top"></div>
+        <div class="card-bottom">
+          <div class="card-btm-head">
+            <h2 class="card-title">Play</h2>
+            <i class="ph-bold  ph-dots-three"></i>
+          </div>
+          <div class="card-btm-main">
+            <p class="main-hrs">...hr</p> <!-- daily -->
+            <small>Yesterday - <span class="">2hrs</span></small> <!-- daily -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card study-card">
+        <div class="card-top study-card-top"></div>
+        <div class="card-bottom">
+          <div class="card-btm-head">
+            <h2 class="card-title">Study</h2>
+            <i class="ph-bold  ph-dots-three"></i>
+          </div>
+          <div class="card-btm-main">
+            <p class="main-hrs">...hrs</p> <!-- daily -->
+            <small>Yesterday - <span class="">1hr</span></small> <!-- daily -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card exercise-card">
+        <div class="card-top exercise-card-top"></div>
+        <div class="card-bottom">
+          <div class="card-btm-head">
+            <h2 class="card-title">Exercise</h2>
+            <i class="ph-bold  ph-dots-three"></i>
+          </div>
+          <div class="card-btm-main">
+            <p class="main-hrs">...hr</p> <!-- daily -->
+            <small>Yesterday - <span class="">1hr</span></small> <!-- daily -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card social-card">
+        <div class="card-top social-card-top"></div>
+        <div class="card-bottom">
+          <div class="card-btm-head">
+            <h2 class="card-title">Social</h2>
+            <i class="ph-bold  ph-dots-three"></i>
+          </div>
+          <div class="card-btm-main">
+            <p class="main-hrs">...hr</p> <!-- daily -->
+            <small>Yesterday - <span class="">3hrs</span></small> <!-- daily -->
+          </div>
+        </div>
+      </div>
+
+      <div class="card care-card">
+        <div class="card-top care-card-top"></div>
+        <div class="card-bottom">
+          <div class="card-btm-head">
+            <h2 class="card-title">Self Care</h2>
+            <i class="ph-bold  ph-dots-three"></i>
+          </div>
+          <div class="card-btm-main">
+            <p class="main-hrs">...hrs</p> <!-- daily -->
+            <small>Yesterday - <span class="">1hr</span></small> <!-- daily -->
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
