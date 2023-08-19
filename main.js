@@ -15,6 +15,7 @@ projects.forEach((project, i) => {
   const listItem = document.createElement('li');
   const link = document.createElement('a');
   link.href = `/${project}/index.html`;
+  link.target = '_blank';
 
   const img = document.createElement('img');
   img.src = `/${project}/design/desktop-design.jpg`;
@@ -27,6 +28,6 @@ projects.forEach((project, i) => {
 function formatProjectName(name) {
   return name
     .split('-')
-    .map((word) => word[0].toUpperCase() + word.slice(1))
+    .map(word => word[0].toUpperCase() + word.slice(1))
     .join(' ');
 }

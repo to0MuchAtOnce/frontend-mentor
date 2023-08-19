@@ -19,9 +19,14 @@ async function getData() {
     }
   }
 
+  function retriveTimeData(obj) {
+    console.log('obj', obj);
+  }
+
   function generateCardHTML(data) {
     const htmlString = Object.entries(data)
       .map(time => {
+        console.log(time);
         const timePeriod = time[0];
         const measureTime = getMeasuredTime(timePeriod);
         return `
@@ -33,8 +38,10 @@ async function getData() {
           <i class="ph-bold ph-dots-three"></i>
         </div>
         <div class="card-btm-main">
-          <p class="main-hrs">...hrs</p> <!-- daily -->
-          <small>Yesterday - <span class="">7hrs</span></small> <!-- daily -->
+          <p class="main-hrs current">${retriveTimeData(
+            time[1].filter(t => t.title === 'Work')
+          )}</p> <!-- daily -->
+          <small>Yesterday - <span class="previous">7hrs</span></small> <!-- daily -->
         </div>
       </div>
     </div>
