@@ -1,7 +1,3 @@
-html {
-  min-width: none;
-}
-
 :root {
   --bg: #25292e;
   --accent: #6590ab;
@@ -52,6 +48,7 @@ body {
 #navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background: var(--bg);
   max-width: 1096px;
   height: 50px;
@@ -89,8 +86,22 @@ img {
   border: 1px solid var(--border);
   border-radius: 4px;
   max-width: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 #list li a:hover img {
   transform: scale(1.03);
+}
+
+@media (min-width: 768px) {
+  #list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .list-item {
+    flex-basis: calc(50% - 10px);
+  }
 }

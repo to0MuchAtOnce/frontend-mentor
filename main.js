@@ -13,12 +13,15 @@ const list = document.getElementById('list');
 
 projects.forEach((project, i) => {
   const listItem = document.createElement('li');
+  listItem.classList.add('list-item');
+
   const link = document.createElement('a');
   link.href = `/${project}/index.html`;
   link.target = '_blank';
 
   const img = document.createElement('img');
   img.src = `/${project}/design/desktop-design.jpg`;
+  img.alt = formatProjectName(project);
 
   link.prepend(img);
   listItem.appendChild(link);
