@@ -34,3 +34,24 @@ function formatProjectName(name) {
     .map(word => word[0].toUpperCase() + word.slice(1))
     .join(' ');
 }
+
+const themeToggle = document.getElementById('theme-toggle');
+const ThemePreference = localStorage.getItem('theme');
+
+if (ThemePreference === 'light') {
+  document.body.classList.add('light-theme');
+}
+// function toggleLightTheme() {
+//   document.body.classList.toggle('light-theme');
+// }
+
+// themeToggle.addEventListener('click', toggleLightTheme);
+
+themeToggle.addEventListener('click', () => {
+  document.body.classList.toggle('light-theme');
+
+  const currentTheme = document.body.classList.contains('light-theme')
+    ? 'light'
+    : 'dark';
+  localStorage.setItem('theme', currentTheme);
+});
