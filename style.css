@@ -3,6 +3,7 @@
   --accent: #6590ab;
   --light-text: #e4e4e4;
   --border: #606060;
+  --footer-icon: #737373;
 }
 
 * {
@@ -78,7 +79,7 @@ body {
   flex-wrap: wrap;
   list-style: none;
   transition: transform 0.3s ease;
-  margin: 0 16px;
+  margin: 0 16px 20px;
   gap: 20px;
 }
 
@@ -87,11 +88,35 @@ img {
   border-radius: 4px;
   max-width: 100%;
   width: 100%;
-  object-fit: cover;
+  aspect-ratio: 16 / 9;
 }
 
 #list li a:hover img {
   transform: scale(1.03);
+}
+
+.footer-container {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+footer li {
+  list-style-type: none;
+}
+
+.footer-icon {
+  fill: var(--footer-icon);
+  cursor: pointer;
+  font-size: 30px;
 }
 
 @media (min-width: 768px) {
